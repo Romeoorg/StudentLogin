@@ -6,14 +6,11 @@
         xmlns:local="clr-namespace:WpfApp2"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    
+
     <Grid>
-        
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0*"/>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
-        <Image x:Name="pg" Source="pg.jpg"></Image>
+
+        <Image x:Name="pg" Source="/pg.jpg" Height= "800"/>
+
         <TextBox x:Name="txtusername" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="440,80,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="270" Height="30" FontWeight="Bold" FontSize="20" TextChanged="txtusername_TextChanged"/>
         <TextBox x:Name="txtpassword" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="440,153,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="286" Height="37"/>
         <Button x:Name="btnlogin" Content="Login" Grid.ColumnSpan="2" HorizontalAlignment="Left" Margin="184,229,0,0" VerticalAlignment="Top" Height="39" Width="135" FontSize="16" FontWeight="Bold" Click="btnlogin_Click"/>

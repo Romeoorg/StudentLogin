@@ -7,7 +7,11 @@
         mc:Ignorable="d"
         Title="StudentLogin" Height="450" Width="800">
     <Grid>
-        <Image x:Name="Digital" Source="/Digital.jpg" Margin="-30,-23,51,-14" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="187*"/>
+            <ColumnDefinition Width="13*"/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="Digital" Source="/Digital.jpg" Height="NaN" VerticalAlignment="Stretch" Margin="0,0,0,0" />
         <Label Content="METTUS STUDENT LOGIN" HorizontalAlignment="Left" Margin="249,38,0,0" VerticalAlignment="Top" Height="53" Width="306" FontSize="20" FontWeight="Bold"/>
         <Label Content="USERNAME" HorizontalAlignment="Left" Margin="43,91,0,0" VerticalAlignment="Top" Height="43" Width="206" FontSize="16" FontWeight="Bold"/>
         <Label Content="PASSWORD" HorizontalAlignment="Left" Margin="43,156,0,0" VerticalAlignment="Top" Width="123" Height="33" FontSize="16" FontWeight="Bold"/>
