@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Digital.jpg" />
+    <None Remove="mettus.png" />
+    <None Remove="Students.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.5.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Digital.jpg" />
+    <Resource Include="mettus.png" />
+    <Resource Include="Students.jpg" />
+  </ItemGroup>
+
+</Project>
